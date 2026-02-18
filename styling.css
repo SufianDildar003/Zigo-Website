@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -180,3 +181,275 @@ body {
   transform: scale(3);
 }
 
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+body {
+    background: #fff;
+}
+
+
+.top-bar {
+    background: #9a0dc1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+
+.navbar {
+  
+    top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    color: rgba(236, 236, 236, 0.957);
+    z-index: 10;
+    
+    position: fixed;
+}
+
+.nav-left a,
+.nav-right a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+.hero-column {
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(12, 4, 4);
+    z-index: 5;
+}
+
+.hero-text small {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+.hero-text a {
+    text-decoration: none;
+    color: rgb(13, 219, 185);
+  font-size: large;
+    border-bottom: 1px solid rgb(2, 2, 2);
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+
+.collection {
+    height: 100vh;
+    padding: 50px;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        height: 90vh;
+    }
+
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        background: black;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-left.show,
+    .nav-right.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+.image-grid-section {
+  padding: 0%;
+  background: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  overflow: hidden;
+  display: grid;
+  background: #f8f8f8;
+
+  
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill ;
+  display: block;
+  transition: 2s;
+}
+
+.grid-item:hover img {
+  transform: scale(3);
+}
+
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 50px;
+    padding: 0 5px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+.mode-toggle span {
+    font-size: 16px;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+.dark-mode .toggle-slider {
+    transform: translateX(50px);
+    background: #222;
+}
+
+
+.dark-mode body {
+    background: #121212;
+    color: #eee;
+}
+
+.dark-mode .top-bar {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: rgba(0,0,0,0.95);
+    background: #121212;
+    color: #d1cece;
+}
+
+.dark-mode .navbar a {
+    color: #e0dbdb;
+  
+}
+
+
+
+
+
+.dark-mode .grid-item {
+    background: #222;
+}
+
+.dark-mode .grid-item img {
+    filter: brightness(0.8);
+}
+
+.dark-mode #collection {
+    background: #1e1e1e;
+    color: #eee;
+   
+}
+
+
+
+.dark-mode .image-grid-section {
+    background: #121212;
+}
+
+
+.dark-mode .grid-item {
+    background: #1a1a1a;
+}
+
+
+>>>>>>> af1475f (Added updates to website code)
